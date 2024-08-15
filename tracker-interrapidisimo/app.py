@@ -29,9 +29,9 @@ def rastrear_guia(numero_de_guia):
     # Configurar opciones para ejecutar Firefox en modo headless
     options = Options()
     options.headless = False  # Cambia a True para ejecutar en modo headless
-    # options.add_argument("--headless")  # Activa el modo headless de manera explícita
-    # options.add_argument("--disable-gpu")  # Deshabilita la GPU (opcional, por si acaso)
-    # options.add_argument("--no-sandbox")  # Agrega esta opción si estás ejecutando en un entorno sin UI
+    options.add_argument("--headless")  # Activa el modo headless de manera explícita
+    options.add_argument("--disable-gpu")  # Deshabilita la GPU (opcional, por si acaso)
+    options.add_argument("--no-sandbox")  # Agrega esta opción si estás ejecutando en un entorno sin UI
 
     service = FirefoxService(executable_path='/usr/bin/geckodriver')  # Asegúrate de que esta sea la ruta correcta
 
@@ -57,15 +57,11 @@ def rastrear_guia(numero_de_guia):
         # elemento = driver.find_element(By.CSS_SELECTOR, '.search-button')
 
         # Encuentra el elemento <a> dentro del div con la clase 'search-button'
-        print("se va a buscar", flush=True)
         elemento = WebDriverWait(driver, 10).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, '.right-button'))
         )
 
         elemento.click()
-
-        print("se va a buscar 2", flush=True)
-
         # print("El elemento fue encontrado y es visible.", flush=True)
         # # Obtén las coordenadas del elemento
         # location = elemento.location
