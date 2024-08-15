@@ -45,21 +45,7 @@ def process_images(image_paths, output_dir):
 if __name__ == "__main__":
     # Lista de rutas de las imágenes a procesar
     image_paths = [
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0626.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0627.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0628.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0629.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0630.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0631.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0632.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0633.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0634.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0635.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0636.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0637.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0638.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0639.JPEG",
-        "/home/juan-cadavid/Documents/art-monia/studio/IMG_0640.JPEG",
+        "/home/juan-cadavid/PycharmProjects/util-functions/rm-bg/24-7.png"
     ]
 
     # Directorio donde se guardarán las imágenes sin fondo
