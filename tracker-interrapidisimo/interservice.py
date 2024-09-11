@@ -60,12 +60,12 @@ def limpiar_cadena_personalizada(cadena):
 def rastrear_guia(numero_de_guia):
     # Configurar opciones para ejecutar Firefox en modo headless
     options = Options()
-    options.headless = False  # Cambia a True para ejecutar en modo headless
-    options.add_argument("--headless")  # Activa el modo headless de manera explícita
-    options.add_argument("--disable-gpu")  # Deshabilita la GPU (opcional, por si acaso)
-    options.add_argument("--no-sandbox")  # Agrega esta opción si estás ejecutando en un entorno sin UI
+    options.headless = True  # Cambia a True para ejecutar en modo headless
+    #options.add_argument("--headless")  # Activa el modo headless de manera explícita
+    #options.add_argument("--disable-gpu")  # Deshabilita la GPU (opcional, por si acaso)
+    #options.add_argument("--no-sandbox")  # Agrega esta opción si estás ejecutando en un entorno sin UI
 
-    service = FirefoxService(executable_path='/usr/bin/geckodriver')  # Asegúrate de que esta sea la ruta correcta
+    service = FirefoxService(executable_path='/usr/local/bin/geckodriver')  # Asegúrate de que esta sea la ruta correcta
 
     driver = webdriver.Firefox(service=service, options=options)
 
